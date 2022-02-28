@@ -1,4 +1,6 @@
 import React,{useState} from 'react'
+import produce from 'immer';
+
 //we represent the cell to be either 0 means dead and 1 means alive
 export default function App() {
 const numOfRows = 50;
@@ -18,9 +20,17 @@ const numOfCols = 50;
     
     return rows;
   }) 
+ //store whether we started or not
+ const [running,setRunning] = useState(false)
+  
 
   
   return (
+  <>
+    <button
+      onClick={() => setRunning(prev=>{return !prev})}
+    >{!running?'start':'stop'}
+    </button>
     <div 
       style={{
         display: 'grid',
@@ -32,7 +42,14 @@ const numOfCols = 50;
       style={{width:20, height:20,
       backgroundColor:grid[rid][cid]?'pink':undefined,
       border:"solid 1px black"
-      }}></div>))}
+      }}
+      onClick={()=>{
+        setGrid(produce(grid, copygrid=>{
+          copygrid[rid][cid] =grid[rid][cid]? 0:1 ;
+        }))
+      }}
+      ></div>))}
     </div>
+  </>
   )
 }
