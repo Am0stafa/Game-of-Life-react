@@ -36,7 +36,7 @@ const randomGen =()=>{
 
   const rows = [];
   for(let i = 0; i < numOfCols;i++){
-    rows.push(Array.from(Array(numOfCols),()=>Math.random()<0.7?0:1))
+    rows.push(Array.from(new Array(numOfCols),()=>Math.random()<0.7?0:1))
  }
 
   return setGrid(rows);
