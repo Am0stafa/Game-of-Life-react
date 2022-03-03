@@ -147,7 +147,7 @@ const runSimulation = useCallback(() =>{
       {grid.map((row,rid) => row.map((col,cid)=> <div 
       key={`${rid}-${cid}`}
       style={{width:20, height:20,
-      backgroundColor:grid[rid][cid]?'pink':undefined,
+      backgroundColor:grid[rid][cid]?'black':undefined,
       border:"solid 1px black"
       }}
       //we do all changes to the grid copy then it will reflect on the state
