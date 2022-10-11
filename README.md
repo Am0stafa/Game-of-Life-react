@@ -12,4 +12,4 @@ It is a simulation or cellular automaton where it's a giant grid with a bunch of
 ## Demo
 
 ![Demo](./static/favicon.gif)  
-Try it out!! [here]()
+Try it out!! [here](https://am0stafa.github.io/Game-of-Life-react/)
