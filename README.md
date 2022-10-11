@@ -12,4 +12,4 @@ It is a simulation or cellular automaton where it's a giant grid with a bunch of
 ## Demo
 
 ![Demo](./src/static/favicon.gif)  
-You can see every pattern in [here](https://troytae.github.io/game-of-life/)
+You can see every pattern in [here]()
