@@ -8,3 +8,8 @@ It is a simulation or cellular automaton where it's a giant grid with a bunch of
 3. Any live cell with two or three live neighbours lives on to the next generation.//we wont need to do any thing
 
 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+
+## Demo
+
+![Demo](./src/static/favicon.gif)  
+You can see every pattern in [here](https://troytae.github.io/game-of-life/)
