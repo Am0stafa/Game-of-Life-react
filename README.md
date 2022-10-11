@@ -12,4 +12,4 @@ It is a simulation or cellular automaton where it's a giant grid with a bunch of
 ## Demo
 
 ![Demo](./static/favicon.gif)  
-You can see every pattern in [here]()
+Try it out!! [here]()
